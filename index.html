@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Hydra site Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-black text-white">
+    <div class="absolute inset-0 bg-gradient-to-b from-black to-emerald-500 -z-10"></div>
+    <header class="max-w-4xl mx-auto w-full flex items-center justify-between px-4 py-2">
+        <div class="navbar-logo">
+            <img src="./assets/img/logo.jpg" alt="Logo">
+        </div>
+
+
+        <nav>
+            <ul class="navbar-menu">
+                <li><a href="#home">Sobre nós</a></li>
+                <li><a href="#about">Características</a></li>
+                <li><a href="#services">Nuvem Hydra</a></li>
+                <li>
+                    <a href="#contact">GitHub</a>
+                    <div class="downloads-github">
+                        <i class="fa-regular fa-star"></i>
+                        <a href="#">13 mil</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="navbar-ling relative ml-2">
+            <button id="langDropdownBtn" class="flex items-center gap-1 focus:outline-none px-1 py-1 text-sm">
+                <i class="fa-solid fa-globe"></i>
+            </button>
+            <div id="langDropdown"
+                class="hidden absolute left-1/2 transform -translate-x-1/2 mt-4 w-24 bg-black rounded-md shadow-lg z-20 border border-[#23272e]">
+                <a href="#"
+                    class="block px-2 py-1 text-white text-sm rounded hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-400">Português</a>
+                <a href="#"
+                    class="block px-2 py-1 text-white text-sm rounded hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-400">English</a>
+                <a href="#"
+                    class="block px-2 py-1 text-white text-sm rounded hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-400">Español</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Seção de anúncio -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-emerald-400 -z-10"></div>
+        <section class="flex justify-center py-6">
+            <button
+                class="flex items-center gap-3 bg-[#161b22] border border-[#161b22] text-white px-3 py-3 rounded-full hover:bg-[#6e7681] hover:text-white transition">
+                <i class="fa-solid fa-cloud"></i>
+                <span>A versão v1.0.0 acabou de ser lançada!</span>
+            </button>
+        </section>
+
+        <!-- Seção principal -->
+        <section class="text-center px-6 md:px-12 max-w-7xl mx-auto ">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                O iniciador de jogos definitivo para todas as suas necessidades de jogos
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">
+                Hydra é um inicializador de jogos que permite que você baixe, jogue, acompanhe suas estatísticas
+                e gerencie seus jogos, tudo em um só lugar.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button
+                    class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg transition hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-300 hover:text-black">
+                    <i class="fa-brands fa-windows"></i>
+                    <span>Baixar para Windows</span>
+                </button>
+                <button
+                    class="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg transition hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-300 hover:text-black">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Ver no GitHub</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de imagem -->
+        <section class="w-full flex justify-center items-center px-4 py-4 bg-gradient-to-b to-black">
+            <div class="border border-[#333] rounded-[15px] bg-[#111]/30 backdrop-blur-sm p-3 shadow-lg">
+                <img src="./assets/img/Captura de tela 2025-05-19 004810.png" alt="Hydra UI"
+                    class="rounded-[15px] max-w-[80vw] max-h-[80vh] object-contain transition-transform duration-300 ease-in-out hover:scale-[0.99]" />
+            </div>
+        </section>
+
+        <!-- Seção dois -->
+        <section class="text-center px-6 py-16 md:px-12 max-w-7xl mx-auto">
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-left items-stretch">
+                <div
+                    class="flex flex-col items-stretch gap-4 brightness-75 hover:brightness-100 transition-all duration-300 cursor-default h-full">
+                    <div class="border-t-4 border-emerald-400 pt-2 w-full max-w-max flex items-center gap-3">
+                        <i class="fa-solid fa-bolt text-3xl text-emerald-400" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold">Downloader incorporado</h3>
+                    </div>
+                    <p class="text-gray-500 flex-grow min-h-[120px]">
+                        O cliente de download integrado do Hydra centraliza todas as suas fontes em um só lugar, para
+                        que você possa baixar jogos na velocidade da luz.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-col items-stretch gap-4 brightness-75 hover:brightness-100 transition-all duration-300 cursor-default h-full">
+                    <div class="border-t-4 border-emerald-400 pt-2 w-full max-w-max flex items-center gap-3">
+                        <i class="fa-solid fa-desktop text-3xl text-emerald-400" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold">Suporte para Windows e Linux</h3>
+                    </div>
+                    <p class="text-gray-500 flex-grow min-h-[120px]">
+                        Queremos lhe dar a liberdade de jogar na plataforma de sua escolha sem concessões.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-col items-stretch gap-4 brightness-75 hover:brightness-100 transition-all duration-300 cursor-default h-full">
+                    <div class="border-t-4 border-emerald-400 pt-2 w-full max-w-max flex items-center gap-3">
+                        <i class="fa-solid fa-rocket text-3xl text-emerald-400" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold">Atualizações constantes</h3>
+                    </div>
+                    <p class="text-gray-500 flex-grow min-h-[120px]">
+                        Com atualizações regulares, você pode contar com os recursos mais recentes e correções de bugs
+                        para manter sua biblioteca de jogos funcionando sem problemas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção três -->
+        <section class="relative text-center px-6 py-16 md:px-12 max-w-8xl mx-auto text-white"
+            style="background-image: url('assets/img/background-games.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-75"></div>
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    O que é Hydra?
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Acreditamos que as ferramentas de jogos devem estar nas mãos dos jogadores. Por isso, criamos o
+                    Hydra - um inicializador de jogos versátil que permite baixar jogos, acompanhar conquistas,
+                    monitorar o
+                    tempo de jogo e se conectar com amigos, tudo em um só lugar.
+                </p>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Junte-se a milhares de jogadores que descobriram uma maneira melhor de gerenciar sua vida gamer.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button
+                        class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg transition hover:bg-gradient-to-r hover:from-emerald-400 hover:to-sky-300 hover:text-black">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Baixar para Windows</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção quatro-->
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-emerald-400 -z-10"></div>
+        <section class="flex flex-col items-center py-6 px-4">
+            <!-- Botão -->
+            <button
+                class="flex items-center gap-3 bg-[#161b22] border border-[#161b22] text-white px-6 py-3 rounded-full hover:bg-[#6e7681] hover:text-white transition mb-10">
+                <i class="fa-solid fa-users"></i>
+                <span>Está cada vez melhor!</span>
+            </button>
+
+            <!-- Conteúdo abaixo do botão -->
+            <div class="relative z-10 max-w-3xl mx-auto text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                    Temos muitos recursos interessantes
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Conveniência de um inicializador de jogos moderno combinada com a liberdade e flexibilidade de uma
+                    plataforma descentralizada.
+                </p>
+            </div>
+
+            <!-- Container para os cards com layout personalizado -->
+            <div class="max-w-6xl mx-auto w-full px-4">
+                <!-- Primeira linha - dois cards iguais -->
+                <div class="flex flex-col md:flex-row gap-6 mb-6">
+                    <!-- Card 1 - Monitoramento do Tempo -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-1/2 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/1.webp" alt="Monitoramento do Tempo de Jogo"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Monitoramento do Tempo de Jogo. Monitore suas horas gastas em
+                                cada jogo e conte para seus amigos!</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Conquistas -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-1/2 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/2.webp" alt="Conquistas" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Conquistas. Desbloqueie conquistas, mostre suas habilidades
+                                nos jogos e compare seu progresso com os amigos. Tudo dentro do ecossistema Hydra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda linha - um card estreito e um largo -->
+                <div class="flex flex-col md:flex-row gap-6 mb-6">
+                    <!-- Card 3 - Amigos e status (mais estreito) -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-2/5 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/3.webp" alt="Amigos e status" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Amigos e status. Conecte-se, veja o que eles estão jogando,
+                                confira suas conquistas e seus perfis de garotas de anime lindamente personalizados.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Economia na Nuvem (mais largo) -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-3/5 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/4.webp" alt="Economia na Nuvem" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Economia na Nuvem. A sincronização perfeita do Hydra Cloud
+                                garante que você possa continuar de onde parou, em todos os seus dispositivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terceira linha - um card largo e um estreito -->
+                <div class="flex flex-col md:flex-row gap-6">
+                    <!-- Card 5 - Perfil personalizável (mais largo) -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-3/5 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/5.webp" alt="Perfil personalizável" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Perfil personalizável. Crie uma combinação chamativa, exiba
+                                suas conquistas e personalize sua presença na Hydra.</p>
+                        </div>
+                    </div>
+                    <!-- Card 6 - Caminhos de download (mais estreito) -->
+                    <div
+                        class="bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden transition-all duration-300 md:w-2/5 relative h-[280px] brightness-75 hover:brightness-100">
+                        <img src="./assets/img/6.webp" alt="Caminhos de download" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white text-sm">Caminhos de download. Seus jogos organizados. Escolha pastas
+                                personalizadas para cada título.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Seção Nuvem Hidra -->
+        <section class="relative bg-black py-20 overflow-hidden">
+            <div
+                class="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-emerald-900/20 opacity-50">
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <img src="https://hydralauncher.gg/_app/immutable/assets/cloud.D7q3V-Ja.svg"
+                            alt="Estrutura Nuvem Hidra" class="w-full max-w-md h-auto" />
+                    </div>
+                    <div class="w-full md:w-1/2 text-white">
+                        <div
+                            class="inline-block bg-[#052e29] border border-[#0c3b36] text-[#00e5c9] text-sm rounded-full px-4 py-1.5 mb-4">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="#00e5c9" stroke-width="2" />
+                                    <path d="M12 6V12L16 14" stroke="#00e5c9" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Por apenas R$ 9,99
+                            </span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-3">
+                            <span
+                                class="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">Nuvem</span>
+                            Hidra
+                        </h2>
+                        <p class="text-gray-300 mb-8 max-w-lg">
+                            Eleve sua experiência no Hydra com o Cloud. Obtenha recursos exclusivos que levarão seu
+                            perfil e seus jogos salvos a um novo patamar.
+                        </p>
+
+
+                        <div class="space-y-6 mb-8">
+                            <!-- Item 1 -->
+                            <div class="flex items-start">
+                                <div class="mr-3 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-gray-400 font-medium hover:text-white transition-colors duration-300">
+                                        Acesso First Look
+                                    </h3>
+                                    <p class="text-gray-500 text-sm hover:text-gray-300 transition-colors duration-300">
+                                        Seja um dos primeiros a saber sobre os novos recursos do Hydra antes que eles
+                                        sejam lançados.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex items-start">
+                                <div class="mr-3 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-gray-400 font-medium hover:text-white transition-colors duration-300">
+                                        Tudo na nuvem
+                                    </h3>
+                                    <p class="text-gray-500 text-sm hover:text-gray-300 transition-colors duration-300">
+                                        Suas conquistas e salvamentos são automaticamente copiados para a nuvem, podendo
+                                        ser acessados em qualquer dispositivo a qualquer momento.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="flex items-start">
+                                <div class="mr-3 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-gray-400 font-medium hover:text-white transition-colors duration-300">
+                                        Suporte Prioritário
+                                    </h3>
+                                    <p class="text-gray-500 text-sm hover:text-gray-300 transition-colors duration-300">
+                                        Chegue à frente da fila com suporte prioritário dos gerentes da comunidade.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="flex items-start">
+                                <div class="mr-3 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-gray-400 font-medium hover:text-white transition-colors duration-300">
+                                        Crie um perfil único
+                                    </h3>
+                                    <p class="text-gray-500 text-sm hover:text-gray-300 transition-colors duration-300">
+                                        Faça seu perfil se destacar com avatares animados exclusivos e banners de perfil
+                                        personalizados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botão -->
+                        <div class="relative bg-black py-0 overflow-hidden text-center">
+                            <button
+                                class="flex items-center gap-2 px-6 py-3 mx-auto rounded-lg font-extrabold transition-all text-black bg-white hover:text-black hover:bg-[linear-gradient(to_right,_#34d399,_#38bdf8)]">
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                                <span>Obtenha Hydra Cloud</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Seção de Estatísticas - Contagem de cabeças -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <!-- Badge de comunidade -->
+                <div class="inline-flex items-center gap-2 border border-[#222222] rounded-full px-4 py-1.5 mb-6">
+                    <svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8Z"
+                            stroke="currentColor" stroke-width="2" />
+                        <path d="M3 21C3 16.5817 6.58172 13 11 13H13C17.4183 13 21 16.5817 21 21" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span class="text-gray-300 text-sm font-medium">Comunidade em crescimento</span>
+                </div>
+
+                <!-- Título e subtítulo -->
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Contagem de cabeças da Hydra
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+                    Assim como o monstro lendário, nossa comunidade está sempre crescendo, e os números falam por si:
+                </p>
+
+                <!-- Grid de estatísticas -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 - Total de horas jogadas -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Total de horas jogadas</p>
+                    </div>
+
+                    <!-- Card 2 - Tocando agora -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Tocando agora</p>
+                    </div>
+
+                    <!-- Card 3 - Usuários ativos -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Usuários ativos</p>
+                    </div>
+
+                    <!-- Card 4 - Conquistas conquistadas -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Conquistas conquistadas</p>
+                    </div>
+
+                    <!-- Card 5 - Total de usuários -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Total de usuários</p>
+                    </div>
+
+                    <!-- Card 6 - Downloads de jogos -->
+                    <div class="border border-[#30363d] rounded-lg p-6 flex flex-col items-center">
+                        <div class="flex items-center mb-2">
+                            <div class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></div>
+                            <span class="text-4xl font-bold text-white">0</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Downloads de jogos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Download -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <!-- Lado esquerdo - Imagem do Hydra -->
+                    <div class="w-full md:w-1/2">
+                        <div class="rounded-lg overflow-hidden">
+                            <img src="./assets/img/hydra.webp" alt="Logo Hydra" class="w-full h-auto" />
+                        </div>
+                    </div>
+
+                    <!-- Lado direito - Conteúdo de download -->
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                            Baixar Hydra
+                        </h2>
+
+                        <p class="text-gray-400 mb-8">
+                            Quando o download estiver concluído, basta executar o instalador e seguir as instruções na
+                            tela para configurar o Hydra no seu sistema.
+                        </p>
+
+                        <!-- Botões de download -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10">
+                            <!-- Botão Windows com degradê no hover -->
+                            <a href="#"
+                                class="inline-flex items-center gap-2 border border-gray-700 bg-white text-black font-medium px-4 py-3 rounded-md transition-all duration-300 hover:border-transparent hover:text-black hover:bg-[linear-gradient(to_right,_#34d399,_#38bdf8)]">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 3.449L9.75 2.1V11.551H0V3.449ZM10.949 1.949L24 0V11.4H10.949V1.949ZM0 12.6H9.75V22.051L0 20.699V12.6ZM10.949 12.6H24V24L11.1 22.199" />
+                                </svg>
+                                <span>Baixar a instalação do Windows</span>
+                            </a>
+
+                            <!-- Botão Portátil -->
+                            <a href="#"
+                                class="inline-flex items-center gap-2 border border-gray-700 bg-transparent text-white font-medium px-4 py-3 rounded-md hover:bg-gray-800 transition-colors">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 8H4V6H20V8ZM18 2H6V4H18V2ZM22 12V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V12C2 10.9 2.9 10 4 10H20C21.1 10 22 10.9 22 12ZM16 16L10 12.73V19.26L16 16Z" />
+                                </svg>
+                                <span>Baixar versão portátil</span>
+                            </a>
+                        </div>
+
+                        <!-- Texto para desenvolvedores -->
+                        <p class="text-gray-400 mb-4">
+                            Para usuários avançados ou aqueles que desejam construir o Hydra a partir do código-fonte,
+                            você pode encontrar o código-fonte completo em nosso repositório GitHub:
+                        </p>
+
+                        <!-- Botão GitHub -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 border border-gray-700 bg-transparent text-white font-medium px-4 py-2 rounded-md hover:bg-gray-800 transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5807 20.2772 21.0497 21.7437 19.0074C23.2101 16.965 23.9993 14.5143 24 12C24 5.37 18.63 0 12 0Z" />
+                            </svg>
+                            <span>Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Perguntas Frequentes -->
+            <section class="py-20 px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row items-start gap-10">
+                        <!-- Lado esquerdo - Perguntas e Respostas -->
+                        <div class="w-full md:w-3/5">
+                            <h2 class="text-4xl font-bold text-white mb-10">
+                                Perguntas frequentes
+                            </h2>
+
+                            <!-- Acordeão de perguntas -->
+                            <div class="space-y-4">
+                                <!-- Pergunta 1 -->
+                                <div class="border-b border-gray-800">
+                                    <button
+                                        class="flex items-center justify-between w-full py-4 text-left text-white hover:text-gray-300 transition-colors">
+                                        <span>O Hydra é realmente gratuito?</span>
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="hidden pb-4 text-gray-400">
+                                        <p>Sim, o Hydra é completamente gratuito para uso pessoal. Oferecemos recursos
+                                            premium através do Hydra Cloud por uma pequena taxa mensal, mas todas as
+                                            funcionalidades principais são gratuitas.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Pergunta 2 -->
+                                <div class="border-b border-gray-800">
+                                    <button
+                                        class="flex items-center justify-between w-full py-4 text-left text-white hover:text-gray-300 transition-colors">
+                                        <span>O Hydra é de código aberto?</span>
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="hidden pb-4 text-gray-400">
+                                        <p>Sim, o Hydra é um projeto de código aberto. Todo o código-fonte está
+                                            disponível em nosso repositório GitHub, e encorajamos contribuições da
+                                            comunidade.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Pergunta 3 -->
+                                <div class="border-b border-gray-800">
+                                    <button
+                                        class="flex items-center justify-between w-full py-4 text-left text-white hover:text-gray-300 transition-colors">
+                                        <span>O Hydra é seguro de usar?</span>
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="hidden pb-4 text-gray-400">
+                                        <p>Absolutamente. Priorizamos a segurança dos nossos usuários. O Hydra não
+                                            coleta dados pessoais desnecessários e todo o código é verificado
+                                            regularmente quanto a vulnerabilidades.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Pergunta 4 -->
+                                <div class="border-b border-gray-800">
+                                    <button
+                                        class="flex items-center justify-between w-full py-4 text-left text-white hover:text-gray-300 transition-colors">
+                                        <span>Como posso contribuir para a Hydra?</span>
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="hidden pb-4 text-gray-400">
+                                        <p>Existem várias maneiras de contribuir: reportar bugs, sugerir melhorias,
+                                            contribuir com código, ajudar na documentação ou até mesmo fazer uma doação
+                                            para apoiar o desenvolvimento.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Pergunta 5 -->
+                                <div class="border-b border-gray-800">
+                                    <button
+                                        class="flex items-center justify-between w-full py-4 text-left text-white hover:text-gray-300 transition-colors">
+                                        <span>Posso fazer backup dos meus arquivos salvos?</span>
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="hidden pb-4 text-gray-400">
+                                        <p>Sim, o Hydra oferece opções de backup local. Com o Hydra Cloud, você também
+                                            obtém sincronização automática na nuvem para todos os seus arquivos salvos
+                                            em todos os dispositivos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lado direito - Imagem ilustrativa -->
+                        <div class="w-full md:w-2/5 mt-10 md:mt-0">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="./assets/img/faq.webp" alt="Perguntas Frequentes"
+                                    class="w-full h-auto" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script para funcionalidade do acordeão -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const accordionButtons = document.querySelectorAll('button.flex.items-center.justify-between');
+
+                    accordionButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            // Encontra o conteúdo associado a este botão
+                            const content = this.nextElementSibling;
+                            const icon = this.querySelector('svg');
+
+                            // Alterna a visibilidade do conteúdo
+                            if (content.classList.contains('hidden')) {
+                                content.classList.remove('hidden');
+                                icon.style.transform = 'rotate(180deg)';
+                            } else {
+                                content.classList.add('hidden');
+                                icon.style.transform = 'rotate(0)';
+                            }
+                        });
+                    });
+                });
+            </script>
+
+        </section>
+
+    </main>
+
+    <footer>
+        
+     <!-- Footer com degradê verde para azul apenas na região do footer, sem a faixa superior verde -->
+<footer class="w-full">
+  <!-- Conteúdo principal do footer com degradê de fundo -->
+  <div class="bg-gradient-to-b from-teal-700 to-blue-400 pt-5 pb-10 px-5">
+    <div class="mx-auto rounded-xl bg-black border border-gray-800/50 p-8">
+      <div class="flex flex-col lg:flex-row justify-between gap-6">
+        <!-- Lado esquerdo - Logo e redes sociais -->
+        <div class="flex flex-col items-center lg:items-start gap-4">
+          <!-- Logo e texto -->
+          <div class="flex flex-row items-center gap-4">
+            <img src="data:image/svg+xml,%3csvg%20width='54'%20height='48'%20viewBox='0%200%2054%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20%3e%3cpath%20d='M17.8503%2029.118L19.9199%2028.3238L20.696%2025.6768L20.4373%2024.8826L18.109%2025.9415L14.4872%2024.3532L10.0894%2023.0297L5.69153%2023.5591L3.10455%2025.6768L2.58716%2029.118L4.13934%2033.618L5.69153%2036.7945L8.5372%2038.9122L10.8655%2038.3828L13.9698%2034.9416V31.5004L12.9351%2029.118V32.2945L10.8655%2034.9416H7.50241L4.91543%2032.2945L5.69153%2028.3238L9.57199%2026.4709L13.9698%2027.5297L17.8503%2029.118Z'%20fill='white'%20/%3e%3cpath%20d='M36.9588%2029.118L34.8892%2028.3238L34.1131%2025.6768L34.3718%2024.8826L36.7001%2025.9415L40.3218%2024.3532L44.7197%2023.0297L49.1176%2023.5591L51.7045%2025.6768L52.2219%2029.118L50.6697%2033.618L49.1176%2036.7945L46.2719%2038.9122L43.9436%2038.3828L40.8392%2034.9416V31.5004L41.874%2029.118V32.2945L43.9436%2034.9416H47.3067L49.8936%2032.2945L49.1176%2028.3238L45.2371%2026.4709L40.8392%2027.5297L36.9588%2029.118Z'%20fill='white'%20/%3e%3cpath%20d='M39.9745%2019.4003L38.4656%2019.9068L38.3557%2019.0591L38.1424%2017.7046L39.3982%2014.7768L41.2435%2011.5719L44.0702%209.43976L46.6895%209.23137L48.8115%2010.9369L50.2961%2014.403L51.0797%2017.1028L50.5536%2019.9068L48.9252%2020.8913L45.3054%2020.6203L43.4829%2018.6279L42.8203%2016.6748L44.5026%2018.5139L47.1027%2018.8989L49.0499%2017.0341L49.1458%2014.067L46.5936%2012.1985L43.3656%2013.2774L41.38%2016.329L39.9745%2019.4003Z'%20fill='white'%20/%3e%3cpath%20d='M14.0241%2019.4003L15.5329%2019.9068L15.6429%2019.0591L15.8561%2017.7046L14.6003%2014.7768L12.755%2011.5719L9.92836%209.43976L7.30904%209.23137L5.187%2010.9369L3.70245%2014.403L2.91886%2017.1028L3.44492%2019.9068L5.07333%2020.8913L8.69316%2020.6203L10.5156%2018.6279L11.1782%2016.6748L9.49594%2018.5139L6.8958%2018.8989L4.94865%2017.0341L4.85275%2014.067L7.40494%2012.1985L10.633%2013.2774L12.6185%2016.329L14.0241%2019.4003Z'%20fill='white'%20/%3e%3cpath%20d='M19.9496%2035.4346L22.5543%2033.3374L21.9879%2033.0886L20.9531%2030.9709L19.9496%2031.5004L17.59%2033.0886L15.3907%2036.3772L14.7443%2039.4416L15.2617%2042.0887L17.0726%2044.4711L20.9531%2046.3241L23.6934%2045.5299L25.4352%2043.7656L26.0031%2041.9195L25.6095%2038.0511L25.0921%2036.7915L23.6934%2036.0004L24.3161%2038.1053L24.3161%2041.0299L22.3599%2042.9184L19.9496%2042.9184L18.0228%2041.0299L17.4952%2038.1053L19.9496%2035.4346Z'%20fill='white'%20/%3e%3cpath%20d='M35.0958%2035.4346L32.4911%2033.3374L33.0576%2033.0886L34.0923%2030.9709L35.0958%2031.5004L37.4554%2033.0886L39.6548%2036.3772L40.3012%2039.4416L39.7837%2042.0887L37.9728%2044.4711L34.0923%2046.3241L31.352%2045.5299L29.6102%2043.7656L29.0423%2041.9195L29.4359%2038.0511L29.9533%2036.7915L31.352%2036.0004L30.7294%2038.1053L30.7294%2041.0299L32.6855%2042.9184L35.0958%2042.9184L37.0226%2041.0299L37.5502%2038.1053L35.0958%2035.4346Z'%20fill='white'%20/%3e%3cpath%20d='M18.8449%208.70593V5.79413L20.1384%205H22.9841L27.382%205.79413L31.7798%205H34.6255L35.919%205.79413V8.70593L38.7646%2011.353L37.2125%2015.0589L37.9885%2020.8825L35.919%2023.0002L33.332%2023.7943L32.8146%2026.1767L33.332%2028.8238L32.8146%2030.9415L31.7798%2033.0591L30.2276%2033.8533H27.382H24.5363L22.9841%2033.0591L21.9493%2030.9415L21.4319%2028.8238L21.9493%2026.1767L21.4319%2023.7943L18.8449%2023.0002L16.7754%2020.8825L17.5515%2015.0589L15.9993%2011.353L18.8449%208.70593Z'%20fill='white'%20/%3e%3cpath%20d='M15.5208%206.88244L16.2968%208.73541L17.5903%207.67657V4.76477L15.5208%206.88244Z'%20fill='white'%20/%3e%3cpath%20d='M38.2864%206.88244L37.5103%208.73541L36.2168%207.67657V4.76477L38.2864%206.88244Z'%20fill='white'%20/%3e%3cpath%20d='M18.367%202.11767L18.6257%204.23534L19.4018%203.70593H20.9539L20.4366%202.11767L17.0735%200L18.367%202.11767Z'%20fill='white'%20/%3e%3cpath%20d='M35.6999%202.11767L35.4412%204.23534L34.6651%203.70593H33.1129L33.6303%202.11767L36.9934%200L35.6999%202.11767Z'%20fill='white'%20/%3e%3c/svg%3e" alt="Hydra" width="40" height="40">
+            <p class="text-lg font-bold text-white">Lançador de Hydra</p>
+          </div>
+          
+          <!-- Ícones de redes sociais -->
+          <div class="flex flex-row items-center gap-2 lg:w-full lg:border-t lg:pt-6">
+            <!-- GitHub -->
+            <a target="_blank" href="#" class="text-white opacity-80 hover:opacity-100 transition-opacity">
+              <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20%3e%3cg%20id='GithubLogo'%20opacity='0.8'%20clip-path='url(%23clip0_400_7175)'%3e%3cpath%20id='Vector'%20d='M3.375%208.12501V8.75001C3.37631%209.80751%203.76021%2010.8288%204.4558%2011.6254C5.15139%2012.4219%206.11169%2012.9399%207.15938%2013.0836C6.73173%2013.6308%206.4996%2014.3055%206.5%2015V18.125C6.5%2018.2908%206.56585%2018.4497%206.68306%2018.567C6.80027%2018.6842%206.95924%2018.75%207.125%2018.75H12.125C12.2908%2018.75%2012.4497%2018.6842%2012.5669%2018.567C12.6842%2018.4497%2012.75%2018.2908%2012.75%2018.125V16.875H14.625C15.4538%2016.875%2016.2487%2016.5458%2016.8347%2015.9597C17.4208%2015.3737%2017.75%2014.5788%2017.75%2013.75C17.75%2013.2527%2017.9475%2012.7758%2018.2992%2012.4242C18.6508%2012.0726%2019.1277%2011.875%2019.625%2011.875C19.7908%2011.875%2019.9497%2011.8092%2020.0669%2011.692C20.1842%2011.5747%2020.25%2011.4158%2020.25%2011.25C20.25%2011.0842%2020.1842%2010.9253%2020.0669%2010.8081C19.9497%2010.6909%2019.7908%2010.625%2019.625%2010.625C19.2146%2010.625%2018.8083%2010.7058%2018.4291%2010.8629C18.05%2011.0199%2017.7055%2011.2501%2017.4153%2011.5403C17.1251%2011.8305%2016.8949%2012.175%2016.7379%2012.5541C16.5808%2012.9333%2016.5%2013.3396%2016.5%2013.75C16.5%2014.2473%2016.3025%2014.7242%2015.9508%2015.0758C15.5992%2015.4275%2015.1223%2015.625%2014.625%2015.625H12.75V15C12.7504%2014.3055%2012.5183%2013.6308%2012.0906%2013.0836C13.1383%2012.9399%2014.0986%2012.4219%2014.7942%2011.6254C15.4898%2010.8288%2015.8737%209.80751%2015.875%208.75001V8.12501C15.8672%207.34827%2015.6604%206.58651%2015.2742%205.91251C15.4653%205.29626%2015.5265%204.64711%2015.4542%204.00599C15.3819%203.36487%2015.1775%202.7457%2014.8539%202.18751C14.799%202.09248%2014.7201%202.01357%2014.6251%201.95871C14.53%201.90385%2014.4222%201.87499%2014.3125%201.87501C13.5845%201.87349%2012.8663%202.04225%2012.2151%202.36781C11.564%202.69337%2010.9981%203.16671%2010.5625%203.75001H8.6875C8.25193%203.16671%207.68598%202.69337%207.03485%202.36781C6.38373%202.04225%205.66548%201.87349%204.9375%201.87501C4.82777%201.87499%204.71996%201.90385%204.62492%201.95871C4.52988%202.01357%204.45096%202.09248%204.39609%202.18751C4.07249%202.74569%203.86813%203.3649%203.79592%204.00604C3.72371%204.64719%203.78522%205.29634%203.97656%205.91251C3.58968%206.58624%203.38253%207.34813%203.375%208.12501Z'%20fill='white'%20/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_400_7175'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='matrix(-1%200%200%201%2020.25%200)'%20/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" width="24" height="24" alt="GitHub">
+            </a>
+            <!-- Twitter/X -->
+            <a target="_blank" href="#" class="text-white opacity-70 hover:opacity-100 transition-opacity">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20opacity='0.7'%3e%3cpath%20fill='%23FFF'%20d='M10.488%2014.651L15.25%2021h7l-7.858-10.478L20.93%203h-2.65l-5.117%205.886L8.75%203h-7l7.51%2010.015L2.32%2021h2.65zM16.25%2019L5.75%205h2l10.5%2014z'%20/%3e%3c/svg%3e" width="24" height="24" alt="Twitter">
+            </a>
+            <!-- Bluesky -->
+            <a target="_blank" href="#" class="text-white opacity-70 hover:opacity-100 transition-opacity">
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='600'%20height='530'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20opacity='0.7'%3e%3cpath%20d='m135.72%2044.03c66.496%2049.921%20138.02%20151.14%20164.28%20205.46%2026.262-54.316%2097.782-155.54%20164.28-205.46%2047.98-36.021%20125.72-63.892%20125.72%2024.795%200%2017.712-10.155%20148.79-16.111%20170.07-20.703%2073.984-96.144%2092.854-163.25%2081.433%20117.3%2019.964%20147.14%2086.092%2082.697%20152.22-122.39%20125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937%200.51669-3.7077%207.8964-13.714%2040.255-67.233%20197.36-189.63%2071.766-64.444-66.128-34.605-132.26%2082.697-152.22-67.108%2011.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07%200-88.687%2077.742-60.816%20125.72-24.795z'%20fill='%23fff'/%3e%3c/svg%3e" width="24" height="24" alt="Bluesky">
+            </a>
+            <!-- TikTok -->
+            <a target="_blank" href="#" class="text-white opacity-70 hover:opacity-100 transition-opacity">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20opacity='0.7'%3e%3cpath%20fill='white'%20d='M16.6%205.82s.51.5%200%200A4.28%204.28%200%200%201%2015.54%203h-3.09v12.4a2.59%202.59%200%200%201-2.59%202.5c-1.42%200-2.6-1.16-2.6-2.6c0-1.72%201.66-3.01%203.37-2.48V9.66c-3.45-.46-6.47%202.22-6.47%205.64c0%203.33%202.76%205.7%205.69%205.7c3.14%200%205.69-2.55%205.69-5.7V9.01a7.35%207.35%200%200%200%204.3%201.38V7.3s-1.88.09-3.24-1.48'/%3e%3c/svg%3e" width="25" height="25" alt="TikTok">
+            </a>
+            <!-- Reddit -->
+            <a target="_blank" href="#" class="text-white opacity-70 hover:opacity-100 transition-opacity">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3e%3cpath%20fill='transparent'%20d='M10.75%2013.04c0-.57-.47-1.04-1.04-1.04s-1.04.47-1.04%201.04a1.04%201.04%200%201%200%202.08%200m3.34%202.37c-.45.45-1.41.61-2.09.61s-1.64-.16-2.09-.61a.26.26%200%200%200-.38%200a.26.26%200%200%200%200%20.38c.71.71%202.07.77%202.47.77s1.76-.06%202.47-.77a.26.26%200%200%200%200-.38c-.1-.1-.27-.1-.38%200m.2-3.41c-.57%200-1.04.47-1.04%201.04s.47%201.04%201.04%201.04s1.04-.47%201.04-1.04S14.87%2012%2014.29%2012'/%3e%3cpath%20fill='%23FFF'%20opacity='0.7'%20d='M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010s10-4.48%2010-10S17.52%202%2012%202m5.8%2011.33c.02.14.03.29.03.44c0%202.24-2.61%204.06-5.83%204.06s-5.83-1.82-5.83-4.06c0-.15.01-.3.03-.44c-.51-.23-.86-.74-.86-1.33a1.455%201.455%200%200%201%202.47-1.05c1.01-.73%202.41-1.19%203.96-1.24l.74-3.49c.01-.07.05-.13.11-.16c.06-.04.13-.05.2-.04l2.42.52a1.04%201.04%200%201%201%20.93%201.5c-.56%200-1.01-.44-1.04-.99l-2.17-.46l-.66%203.12c1.53.05%202.9.52%203.9%201.24a1.455%201.455%200%201%201%201.6%202.38'/%3e%3c/svg%3e" width="24" height="24" alt="Reddit">
+            </a>
+          </div>
+        </div>
+        
+        <!-- Lado direito - Links em duas colunas -->
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Coluna O Projeto -->
+          <div class="flex w-48 flex-col gap-2">
+            <p class="text-sm font-bold text-white">O Projeto</p>
+            <nav class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Lançamentos</a>
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Contribuindo</a>
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Construir a partir da fonte</a>
+            </nav>
+          </div>
+          
+          <!-- Coluna Serviços -->
+          <div class="flex w-48 flex-col gap-2">
+            <p class="text-sm font-bold text-white">Serviços</p>
+            <nav class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Status</a>
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Opinião</a>
+              <a href="#" class="text-sm text-gray-400 underline-offset-[6px] hover:underline">Ajuda</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* Estilos para o footer */
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  footer .flex-col {
+    align-items: center;
+    text-align: center;
+  }
+}
+</style>
+
+    </footer>
+
+    <!--Script menu do idioma-->
+    <script>
+        const btn = document.getElementById('langDropdownBtn');
+        const dropdown = document.getElementById('langDropdown');
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('hidden');
+        });
+        document.addEventListener('click', function () {
+            dropdown.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
